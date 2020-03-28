@@ -1,0 +1,16 @@
+name: wii backup fusion
+summary: wii backup fusion
+description: A Fork of Wii Backup Fusion fixing the bug with game spliting.The complete and simple to use backup solution for your Wii games 
+base: core18
+version: 2.0
+
+
+parts:
+  wii backup fusion:
+   source: https://github.com/evertonstz/wiibafu.git
+   plugin: qmake make
+   apps: 
+     wiibafu:
+       command: WiiBaFu
+      
+confinment: strict   
